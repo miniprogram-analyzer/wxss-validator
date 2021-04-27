@@ -22,7 +22,7 @@ services:
   server:
     image: docker.internal.feel.ac.cn/mp-analyzer/wxss-validator:${CI_COMMIT_SHORT_SHA}
     hostname: mp-analyzer-${CI_ENVIRONMENT_SLUG}.web
-    container_name: mp-analyzer-server
+    container_name: mp-analyzer-wxss-validator
     restart: always
     expose:
       - "8080"
