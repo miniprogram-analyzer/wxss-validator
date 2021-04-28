@@ -8,6 +8,6 @@ build:server:
   script:
     - docker login -u git -p $REGISTRY_PASSWORD docker.internal.feel.ac.cn
     - docker build -t docker.internal.feel.ac.cn/mp-analyzer/wxss-validator:latest .
-    - docker push docker.internal.feel.ac.cn/mp-analyzer/wxss-validator:$CI_COMMIT_SHORT_SHA
+    - docker push docker.internal.feel.ac.cn/mp-analyzer/wxss-validator:latest
   rules:
     - if: '$CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH'
